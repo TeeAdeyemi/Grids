@@ -1,0 +1,93 @@
+body{
+   box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.gridcontainer{
+    background-color: rgb(75, 76, 73);
+    display: grid;
+    gap: 0.6rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition:ease-in
+    
+    
+
+}
+
+.item{
+    font-size: 25px;
+    padding: 70px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1584474760266-6f62be87b3a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJlZXNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+}
+
+
+#goals{
+grid-column: span 2;
+
+}
+
+#heart{ 
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60);
+    color: black;
+    grid-column: 3/5;
+}
+
+#miles{ 
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60);
+    color: black;
+}
+
+#blood{ 
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60);
+    color: black;
+    grid-column: 3/5;
+
+}
+#avg{ 
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60);
+    color: black;
+    grid-column: 1/3;
+} 
+
+#work{ 
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+} 
+
+#body{
+    background-image: url(https://plus.unsplash.com/premium_photo-1667942321723-1b0ed998d396?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60); 
+    color: black;
+}
+
+.gridcontainer> div:hover{
+ opacity: 0.6;
+ transform: scale(0.98);
+ transition: 0.5s ease-in;
+}
+
+.gridcontainer> div{
+display: grid;
+cursor: pointer;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+background-size: cover;
+background-attachment: fixed;
+transition: all 0.5s ease-in;
+}
+
+@media only screen and (max-width) {
+    .gridcontainer{
+        display: flex;
+        grid-template-columns: repeat(2,1fr)
+    
+    }    
+    
+}
